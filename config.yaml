@@ -1,5 +1,37 @@
-baseURL: "/"
+baseURL: "https://amayadorin.com/"
 title: "ember"
-theme: "PaperMod"
-paginate: 4
-enableRobotsTXT: true
+theme: "ten"
+paginate: 8
+hasCJKLanguage: true
+summaryLength: 150
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 5
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 10
+  footer:
+    - identifier: privacy
+      name: プライバシー
+      url: /privacy/
+      weight: 5
+    - identifier: contact
+      name: お問い合わせ
+      url: /contact/
+      weight: 10
+params:
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/"
+    - name: "twitter"
+      url: "https://twitter.com"
+    - name: "youtube"
+      url: "https://youtube.com"
+markup:
+  highlight:
+    style: dracula
